@@ -1,3 +1,5 @@
+package basics;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -11,6 +13,11 @@ public class BasicAnnotations {
   @BeforeAll
   static void setUp() {
     System.out.println("Before All");
+  }
+
+  @AfterAll
+  static void done() {
+    System.out.println("@AfterAll - executed after all test methods.");
   }
 
   @BeforeEach
@@ -33,10 +40,5 @@ public class BasicAnnotations {
   @AfterEach
   void tearDown() {
     System.out.println("@AfterEach - executed after each test method.");
-  }
-
-  @AfterAll
-  static void done() {
-    System.out.println("@AfterAll - executed after all test methods.");
   }
 }

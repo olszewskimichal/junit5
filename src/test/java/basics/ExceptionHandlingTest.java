@@ -1,3 +1,5 @@
+package basics;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -12,5 +14,5 @@ public class ExceptionHandlingTest {
     });
     assertEquals(exception.getMessage(), "Not supported");
   }
-  
+
 }
