@@ -6,6 +6,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class BasicAnnotations {
@@ -40,5 +42,16 @@ public class BasicAnnotations {
   @AfterEach
   void tearDown() {
     System.out.println("@AfterEach - executed after each test method.");
+  }
+
+  @Nested
+  @DisplayName("Test-Nested")
+  class NestedTest {
+
+    @DisplayName("Wyswietlana nazwa")
+    @Test
+    void successTest() {
+      System.out.println("Nested Test - Success");
+    }
   }
 }
