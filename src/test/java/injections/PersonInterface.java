@@ -1,4 +1,4 @@
-package extensions;
+package injections;
 
 public interface PersonInterface {
 
