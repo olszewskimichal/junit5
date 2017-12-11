@@ -17,7 +17,7 @@ itd
 ```
 * exception handling
 * możliwośc pisania testów w interfejsach
-* extensions np. MockitoExtension
+* extensions np. MockitoExtension, RestAssuredExtension
 * lifecycles
 * dependencyInjection
 * testy parametryzowane
