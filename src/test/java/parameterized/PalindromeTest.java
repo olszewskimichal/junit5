@@ -26,6 +26,10 @@ public class PalindromeTest {
     return true;
   }
 
+  static Stream<String> stringProvider() {
+    return Stream.of("foo", "bar");
+  }
+
   @ParameterizedTest
   @ValueSource(strings = {"racecar", "radar", "able was I ere I saw elba"})
   void palindromes(String candidate) {
@@ -44,24 +48,18 @@ public class PalindromeTest {
     assertTrue(EnumSet.of(TimeUnit.DAYS, TimeUnit.HOURS).contains(timeUnit));
   }
 
-
   @ParameterizedTest
   @MethodSource("stringProvider")
   void testWithSimpleMethodSource(String argument) {
     assertNotNull(argument);
   }
 
-  static Stream<String> stringProvider() {
-    return Stream.of("foo", "bar");
-  }
-
   @ParameterizedTest
-  @CsvSource({ "foo, 1", "bar, 2", "'baz, qux', 3" })
+  @CsvSource({"foo, 1", "bar, 2", "'baz, qux', 3"})
   void testWithCsvSource(String first, int second) {
     assertNotNull(first);
     assertNotEquals(0, second);
   }
-
 
 
 }

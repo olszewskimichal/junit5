@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 import org.junit.jupiter.api.Test;
 
 public class Assumptions {
+
   @Test
   void trueAssumption() {
     assumeTrue(5 > 1);

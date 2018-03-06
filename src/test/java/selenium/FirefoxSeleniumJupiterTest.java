@@ -2,8 +2,10 @@ package selenium;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import condition.DisabledOnWindows;
 import io.github.bonigarcia.SeleniumExtension;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
@@ -21,8 +23,9 @@ class FirefoxSeleniumJupiterTest {
   }
 
   @Test
+  @Disabled
   void testWithOneFirefox() {
-    FirefoxDriver driver=new FirefoxDriver();
+    FirefoxDriver driver = new FirefoxDriver();
     driver.get("https://bonigarcia.github.io/selenium-jupiter/");
 
     assertTrue(driver.getTitle().startsWith("selenium-jupiter"));
@@ -30,6 +33,7 @@ class FirefoxSeleniumJupiterTest {
   }
 
   @Test
+  @Disabled
   void testWithTwoFirefoxs() {
     WebDriver driver = new FirefoxDriver();
     WebDriver driver2 = new FirefoxDriver();
