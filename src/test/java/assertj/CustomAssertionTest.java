@@ -4,7 +4,6 @@ import static assertj.PersonAssert.assertThat;
 
 import extensions.ReplaceCamelCase;
 import org.junit.jupiter.api.DisplayNameGeneration;
-import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 
 @DisplayNameGeneration(ReplaceCamelCase.class)

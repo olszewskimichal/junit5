@@ -2,7 +2,6 @@ package selenium;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import condition.DisabledOnWindows;
 import io.github.bonigarcia.SeleniumExtension;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
