@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(RestAssuredExtension.class)
-public class RestAssureTest {
+class RestAssureTest {
 
   @Test
   void executesGetAsExternallyConfigured() {

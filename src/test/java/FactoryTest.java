@@ -9,7 +9,7 @@ import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;
 
 
-public class FactoryTest {
+class FactoryTest {
 
   @TestFactory
   Collection<DynamicTest> dynamicTestsWithCollection() {

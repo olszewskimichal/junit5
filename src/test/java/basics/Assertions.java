@@ -9,13 +9,13 @@ import java.util.stream.Stream;
 import lombok.Value;
 import org.junit.jupiter.api.Test;
 
-public class Assertions {
+class Assertions {
 
   @Test
   void lambdaExpressions() {
     assertTrue(Stream.of(1, 2, 3)
         .mapToInt(i -> i)
-        .sum() > 5, () -> "Sum should be greater than 5");
+        .sum() > 5, "Sum should be greater than 5");
   }
 
   @Test

@@ -3,19 +3,19 @@ package assertj;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Person {
+class Person {
 
   private String fullName;
   private int age;
   private List<String> nicknames;
 
-  public Person(String fullName, int age) {
+  Person(String fullName, int age) {
     this.fullName = fullName;
     this.age = age;
     this.nicknames = new ArrayList<>();
   }
 
-  public void addNickname(String nickname) {
+  void addNickname(String nickname) {
     nicknames.add(nickname);
   }
 

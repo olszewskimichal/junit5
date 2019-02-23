@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 
-public class LifecycleTest implements TestLifecycleLogger, TimeExecutionLogger {
+class LifecycleTest implements TestLifecycleLogger, TimeExecutionLogger {
 
   @Test
   void sleep20ms() throws Exception {

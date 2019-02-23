@@ -12,6 +12,6 @@ import org.junit.jupiter.api.condition.JRE;
 @Target({TYPE, METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 @EnabledOnJre(JRE.JAVA_8)
-public @interface EnabledOnJRE8 {
+@interface EnabledOnJRE8 {
 
 }

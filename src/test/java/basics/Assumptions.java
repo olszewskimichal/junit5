@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 import org.junit.jupiter.api.Test;
 
-public class Assumptions {
+class Assumptions {
 
   @Test
   void trueAssumption() {

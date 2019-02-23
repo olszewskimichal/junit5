@@ -9,13 +9,13 @@ import org.junit.jupiter.api.extension.ExtensionContext;
 public class RestAssuredExtension implements BeforeAllCallback, AfterAllCallback {
 
   @Override
-  public void beforeAll(ExtensionContext context) throws Exception {
+  public void beforeAll(ExtensionContext context) {
     RestAssured.port = 80;
     RestAssured.baseURI = "http://jsonplaceholder.typicode.com";
   }
 
   @Override
-  public void afterAll(ExtensionContext context) throws Exception {
+  public void afterAll(ExtensionContext context) {
     RestAssured.reset();
   }
 }

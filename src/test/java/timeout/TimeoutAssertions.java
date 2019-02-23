@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class TimeoutAssertions {
 
   @Test
-  void shouldFinishIn100Milis() throws Exception {
+  void shouldFinishIn100Milis() {
     assertTimeout(ofMillis(100), () -> {
       assertEquals("FizzBuzz", "FizzBuzz");
       Thread.sleep(101);

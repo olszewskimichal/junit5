@@ -13,6 +13,6 @@ import org.junit.jupiter.api.Test;
 @Retention(RetentionPolicy.RUNTIME)
 @Tag("integration")
 @Test
-public @interface IntegrationTest {
+@interface IntegrationTest {
 
 }

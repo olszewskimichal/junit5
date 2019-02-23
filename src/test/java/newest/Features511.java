@@ -13,7 +13,7 @@ import org.junit.platform.commons.util.AnnotationUtils;
 import org.junit.platform.commons.util.ClassFilter;
 import org.junit.platform.commons.util.ModuleUtils;
 
-public class Features511 {
+class Features511 {
 
   @Test
   void shouldGetAllClassesInModule() {

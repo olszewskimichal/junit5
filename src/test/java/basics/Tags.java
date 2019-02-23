@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("Test case")
-public class Tags {
+class Tags {
 
   @Test
   @Tag("Method")

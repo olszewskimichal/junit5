@@ -2,17 +2,17 @@ package assertj;
 
 import org.assertj.core.api.AbstractAssert;
 
-public class PersonAssert extends AbstractAssert<PersonAssert, Person> {
+class PersonAssert extends AbstractAssert<PersonAssert, Person> {
 
-  public PersonAssert(Person actual) {
+  private PersonAssert(Person actual) {
     super(actual, PersonAssert.class);
   }
 
-  public static PersonAssert assertThat(Person actual) {
+  static PersonAssert assertThat(Person actual) {
     return new PersonAssert(actual);
   }
 
-  public PersonAssert hasFullName(String fullName) {
+  PersonAssert hasFullName(String fullName) {
     isNotNull();
     if (!actual.getFullName().equals(fullName)) {
       failWithMessage("Expected person to have full name %s but was %s", fullName, actual.getFullName());
@@ -20,7 +20,7 @@ public class PersonAssert extends AbstractAssert<PersonAssert, Person> {
     return this;
   }
 
-  public PersonAssert isAdult() {
+  PersonAssert isAdult() {
     isNotNull();
     if (actual.getAge() < 18) {
       failWithMessage("Expected person to be adult");
@@ -28,7 +28,7 @@ public class PersonAssert extends AbstractAssert<PersonAssert, Person> {
     return this;
   }
 
-  public PersonAssert hasNickName(String nickName) {
+  PersonAssert hasNickName(String nickName) {
     isNotNull();
     if (!actual.getNicknames().contains(nickName)) {
       failWithMessage("Expected person to have nickname %s",
